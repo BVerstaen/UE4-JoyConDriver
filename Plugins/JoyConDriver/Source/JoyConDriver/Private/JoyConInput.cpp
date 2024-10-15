@@ -527,3 +527,14 @@ void FJoyConInput::SendAnalogEvents(const bool bIsLeft, const FPlatformUserId Gr
 		MessageHandler->OnControllerAnalog(bIsLeft ? FJoyConKeyNames::JoyCon_Left_ThumbStick_Y : FJoyConKeyNames::JoyCon_Right_ThumbStick_Y, GripUserId, DeviceId, AnalogState->Y);
 	}
 }
+
+bool FJoyConInput::GetControllerOrientationAndPosition(const int32 ControllerIndex, const FName MotionSource,
+	FRotator& OutOrientation, FVector& OutPosition, float WorldToMetersScale) const
+{
+	return false;
+}
+
+ETrackingStatus FJoyConInput::GetControllerTrackingStatus(const int32 ControllerIndex, const FName MotionSource) const
+{
+	return ETrackingStatus::NotTracked;
+}

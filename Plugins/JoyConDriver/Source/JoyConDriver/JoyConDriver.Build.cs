@@ -27,7 +27,7 @@ public class JoyConDriver : ModuleRules {
             "ApplicationCore",
             "Engine",
             "InputCore",
-            "HeadMountedDisplay"
+            "HeadMountedDisplay", "XRBase"
         });
 
         PrivateIncludePathModuleNames.AddRange(new string[] {
